@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>شركة المستقبل - استيراد وتصدير الأجهزة الإلكترونية</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet"> <!-- إضافة خط Cairo من Google Fonts -->
+  <style>
+    body {
+      font-family: 'Tahoma', sans-serif; /* تغيير نوع الخط الأساسي */
+      font-size: 16px; /* تغيير حجم الخط الأساسي */
+      background-color: #eef4f8;
+      margin: 0;
+      padding: 0;
+      direction: rtl;
+    }
+
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-top: 80px; /* إضافة المسافة المطلوبة هنا */
+    }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .header-content img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+    }
+
+    .header-text h1 {
+      font-family: 'Cairo', sans-serif; /* تغيير الخط لعناوين h1 */
+      font-size: 3em; /* زيادة حجم الخط */
+      margin: 0 0 10px 0;
+    }
+
+    .header-text p {
+      font-family: 'Cairo', sans-serif; /* تغيير الخط لعناوين الفقرة */
+      font-size: 1.5em; /* زيادة حجم النص */
+      margin: 0;
+    }
+
+    .login-form {
+      background-color: white;
+      padding: 10px;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .login-form input {
+      padding: 6px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 0.9em;
+    }
+
+    .login-form button {
+      background-color: #003366;
+      color: white;
+      border: none;
+      padding: 6px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 0.9em;
+    }
+
+    .login-form button:hover {
+      background-color: #005ea6;
+    }
+
+    /* شريط التنقل */
+    .navbar {
+      background-color: #003366;
+      padding: 15px;
+      text-align: right;
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 100%;
+      z-index: 1000;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar a {
+      color: white;
+      margin: 0 25px;
+      text-decoration: none;
+      font-size: 1.5em;
+      padding: 8px 15px;
+      display: inline-block;
+      border-radius: 5px;
+    }
+
+    .navbar a:hover {
+      background-color: #005ea6;
+      color: white;
+    }
+
+    section {
+      padding: 20px;
+      margin-top: 80px; /* إضافة مسافة من أعلى الصفحة لشريط التنقل الثابت */
+    }
+
+    .about-project {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #ccc;
+      padding: 20px;
+      margin: 20px 0;
+    }
+
+    .about-project div {
+      flex: 1;
+      min-width: 250px;
+      padding: 15px;
+    }
+
+    .about-project img,
+    .services img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .services, .team-member {
+      background-color: #ffffff;
+      margin: 20px;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px #ccc;
+    }
+
+    .team {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .team-member {
+      text-align: center;
+    }
+
+    .team-member img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      color: #003366;
+      font-family: 'Cairo', sans-serif; /* تغيير الخط لعناوين h2 */
+    }
+
+    h3 {
+      color: #005ea6;
+      font-family: 'Cairo', sans-serif; /* تغيير الخط لعناوين h3 */
+    }
+
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- شريط التنقل -->
+  <div class="navbar">
+    <a href="#">الصفحة الرئيسية</a>
+    <a href="#">شراء</a>
+    <a href="#">تحدث معنا</a>
+  </div>
+
+  <header>
+    <div class="header-content">
+      <img src="https://cdn-icons-png.flaticon.com/512/3197/3197786.png" alt="شعار الشركة">
+      <div class="header-text">
+        <h1>شركة المستقبل</h1>
+        <p>متخصصون في استيراد وتصدير الأجهزة الإلكترونية بأعلى جودة</p>
+      </div>
+    </div>
+    <form class="login-form" action="#" method="post">
+      <input type="text" placeholder="اسم المستخدم" required>
+      <input type="password" placeholder="كلمة المرور" required>
+      <button type="submit">دخول</button>
+      <button type="button" onclick="window.location='#'">تسجيل حساب</button>
+    </form>
+  </header>
+
+  <section>
+    <h2>عن المشروع</h2>
+    <div class="about-project">
+      <div>
+        <p>
+          شركة <strong>المستقبل</strong> هي شركة رائدة في مجال استيراد وتصدير الأجهزة الإلكترونية.
+          نعمل على توفير أحدث التقنيات من أكبر المصانع العالمية وتوصيلها إلى الأسواق المحلية والعربية بكفاءة وسرعة.
+        </p>
+        <p>
+          نؤمن أن التكنولوجيا الحديثة هي مفتاح التقدم، ولهذا نحرص على تقديم منتجات أصلية بجودة عالية، مع خدمة عملاء متميزة، وشبكة لوجستية متطورة.
+        </p>
+        <p>
+          هدفنا هو أن نكون الخيار الأول لكل من يبحث عن أجهزة إلكترونية موثوقة وخدمة احترافية.
+        </p>
+      </div>
+      <div>
+        <img src="https://images.pexels.com/photos/1181676/pexels-photo-1181676.jpeg" alt="كمبيوتر">
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>الخدمات</h2>
+    <div class="services">
+      <h3>الاستيراد</h3>
+      <img src="https://images.pexels.com/photos/4709287/pexels-photo-4709287.jpeg" alt="استيراد الأجهزة">
+      <p>استيراد أحدث الأجهزة مثل الهواتف، الحواسيب المحمولة، الشاشات، والكاميرات من الشركات العالمية.</p>
+    </div>
+
+    <div class="services">
+      <h3>التصدير</h3>
+      <img src="https://images.pexels.com/photos/4386368/pexels-photo-4386368.jpeg" alt="تصدير الأجهزة">
+      <p>تصدير المنتجات الإلكترونية إلى الأسواق العربية والأفريقية مع ضمان الجودة وخدمة العملاء.</p>
+    </div>
+
+    <div class="services">
+      <h3>الدعم اللوجستي</h3>
+      <img src="https://images.pexels.com/photos/4481259/pexels-photo-4481259.jpeg" alt="دعم لوجستي">
+      <p>توفير خدمات شحن سريعة وآمنة مع تخليص جمركي كامل.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>فريق العمل</h2>
+    <div class="team">
+      <div class="team-member">
+        <img src="https://avataaars.io/?avatarStyle=Circle&topType=ShortHairShortFlat&facialHairType=BeardLight&clotheType=BlazerShirt&eyeType=Default&skinColor=Light" alt="هانى عاشور">
+        <h3>هانى عاشور شحاته غريب</h3>
+        <p>المدير التنفيذي</p>
+      </div>
+      <div class="team-member">
+        <img src="https://avataaars.io/?avatarStyle=Circle&topType=LongHairStraight2&accessoriesType=Round&hairColor=Black&clotheType=BlazerSweater&eyeType=Happy&skinColor=Light" alt="نانسى عصام">
+        <h3>نانسى عصام عبدالوهاب عبدالمؤمن</h3>
+        <p>مديرة الشحن واللوجستيات</p>
+      </div>
+      <div class="team-member">
+        <img src="https://avataaars.io/?avatarStyle=Circle&topType=ShortHairSides&facialHairType=MoustacheFancy&clotheType=GraphicShirt&eyeType=Wink&skinColor=Light" alt="مينا مرقص">
+        <h3>مينا مرقص اسحاق بشير</h3>
+        <p>مدير التسويق</p>
+      </div>
+      <div class="team-member">
+        <img src="https://avataaars.io/?avatarStyle=Circle&topType=LongHairCurly&accessoriesType=Kurt&clotheType=Overall&eyeType=Default&skinColor=Light" alt="كيرلس سامى">
+        <h3>كيرلس سامى نجيب اسعد</h3>
+        <p>مدير المبيعات</p>
+      </div>
+      <div class="team-member">
+        <img src="https://avataaars.io/?avatarStyle=Circle&topType=ShortHairDreads01&facialHairType=BeardMajestic&clotheType=Hoodie&eyeType=Default&skinColor=Light" alt="محمد احمد">
+        <h3>محمد احمد ابوبكر محمود</h3>
+        <p>المدير المالي</p>
+      </div>
+      <div class="team-member">
+        <img src="https://avataaars.io/?avatarStyle=Circle&topType=ShortHairFrizzle&facialHairType=Blank&clotheType=CollarSweater&eyeType=Default&skinColor=Light" alt="حسين دسوقي">
+        <h3>حسين دسوقي اسماعيل قطب</h3>
+        <p>الرد على العملاء</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 شركة المستقبل. جميع الحقوق محفوظة. | الشركاء: هانى عاشور، نانسى عصام، مينا مرقص، كيرلس سامى، محمد احمد، حسين دسوقي</p>
+  </footer>
+
+</body>
+</html>
